@@ -9,21 +9,22 @@
 
 ### Introduction
  - Common Cloud Models
-   - <figure>
+   - <details>
+        <summary>Infrastructure as a Service</summary>
         <img src="./images/iaas.png"
             alt="Infrastructure as a Service"
             width="250" height="150">
-        <figcaption>Infrastructure as a Service</figcaption>
-      </figure>
-   - <figure>
+     </details>
+   - <details>
+        <summary>Platform as a Service</summary>
         <img src="./images/paas.png"
             alt="Platform as a Service"
             width="250" height="150">
-        <figcaption>Platform as a Service</figcaption>
-      </figure>
-   - <figure>
-        <img src="./images/paas.png"
+     </details>
+   - <details>
+        <summary>Software as a Service</summary>
+        <img src="./images/saas.png"
             alt="Software as a Service"
             width="250" height="150">
-        <figcaption>Software as a Service</figcaption>
-      </figure>
+     </details>
+
