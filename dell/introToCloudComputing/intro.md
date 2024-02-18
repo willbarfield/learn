@@ -28,3 +28,29 @@
             width="250" height="150">
      </details>
 
+- Cloud Deployment Models
+  - <details>
+        <summary>Private Cloud Deployment Model</summary>
+        <img src="./images/privateCloudDeploymentModel.png"
+             alt="Private Cloud Deployment Model"
+             width="250" height="150"> 
+    </details>
+  - <details>
+        <summary>Public Cloud Deployment Model</summary>
+        <img src="./images/publicCloudDeploymentModel.png"
+             alt="Public Cloud Deployment Model"
+             width="250" height="150"> 
+    </details>
+  - <details>
+        <summary>Hybrid Cloud Deployment Model</summary>
+        <img src="./images/hybridCloudDeploymentModel.png"
+             alt="Hybrid Cloud Deployment Model"
+             width="250" height="150"> 
+    </details>
+  - <details>
+        <summary>Multi-Cloud Deployment Model</summary>
+        <img src="./images/multiCloudDeploymentModel.png"
+             alt="Multi-Cloud Deployment Model"
+             width="250" height="150"> 
+    </details>
+
