@@ -13,13 +13,13 @@
         <img src="./images/iaas.png"
             alt="Infrastructure as a Service"
             width="250" height="150">
-        <figcaption>Software as a Service</figcaption>
+        <figcaption>Infrastructure as a Service</figcaption>
       </figure>
    - <figure>
         <img src="./images/paas.png"
             alt="Platform as a Service"
             width="250" height="150">
-        <figcaption>Software as a Service</figcaption>
+        <figcaption>Platform as a Service</figcaption>
       </figure>
    - <figure>
         <img src="./images/paas.png"
