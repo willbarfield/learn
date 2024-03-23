@@ -7,7 +7,7 @@
  - Distinguish between cloud deployment models.
  - Select the best deployment model based on desired strategy.
 
-### Introduction
+### Introduction to Cloud Computing
  - Common Cloud Models
    - <details>
         <summary>Infrastructure as a Service</summary>
