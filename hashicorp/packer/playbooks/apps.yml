@@ -1,0 +1,62 @@
+---
+- name: Install Packages
+  apt:
+    name: ['nodejs', 'npm']
+    update_cache: yes
+    state: latest
+  become: true
+  when: ansible_os_family == "Debian"
+
+- name: This command will change the working directory to somedir/
+  ansible.builtin.shell:
+    cmd: node -v
+
+- name: Clone a repo with separate git directory
+  ansible.builtin.git:
+    repo: https://github.com/ellisonleao/clumsy-bird
+    dest: /src/clumsy-bird
+  become: true
+
+- name: Run NPM Install
+  npm:
+    path: /src/clumsy-bird
+  register: npm_finished
+  become: true
+
+- name: "Install NPM-grunt"
+  npm:
+    global: yes
+    name: "{{ item }}"
+    path: /src/clumsy-bird
+  with_items:
+    - grunt-cli
+  become: true
+
+- name: Move 'launch.sh' File to '/src/clumsy-bird' Directory
+  command: mv /tmp/assets/launch.sh /src/clumsy-bird/launch.sh
+  become: true
+    
+- name: Change Value of Clumsy Bird Permissions
+  file:
+    path: /src/clumsy-bird/launch.sh
+    mode: a+x
+  become: true
+
+- name: Change Ownership of '/src/clumsy-bird' 
+  file:
+    path: /src/clumsy-bird/
+    recurse: yes
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+  become: true
+
+- name: Add Clumsy Bird to path
+  command: cp /tmp/assets/clumsy-bird.service /lib/systemd/system/clumsy-bird.service
+  become: true
+
+- name: Start and Enable Clumsy Bird Service
+  service:
+    name: clumsy-bird
+    state: started
+    enabled: yes
+  become: true
