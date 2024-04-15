@@ -1,0 +1,21 @@
+# key/value pair
+Fruit: Apple
+Vegetable: Carrot
+Liquid: Water
+Meat: Chicken
+
+# array/lists
+Fruits:
+- Orange
+- Apple
+- Banana
+
+# dictionary/map
+Banana:
+  Calories: 105
+  Fat: N0.4 g
+  Carbs: 27 g
+Grapes:
+  Calories: 62
+  Fat: 0.3 g
+  Cargs: 16 g
