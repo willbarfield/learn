@@ -1,4 +1,5 @@
 # Lab 0: Install Packer
+
 Packer Packer may be installed in the following ways:
 
 - Using a precompiled binary.
@@ -14,6 +15,7 @@ Duration: 10 minutes
 - Task 3: Enable autocompletion for Packer CLI
 
 ### Task 1: Install Packer on Ubuntu Workstation
+
 ```bash
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
@@ -22,6 +24,7 @@ sudo cp /usr/bin/packer /usr/local/bin/packer
 ```
 
 ### Task 2: Validate the Packer Install
+
 ```bash
 which packer
 /usr/local/bin/packer
@@ -33,6 +36,7 @@ Packer v1.10.0
 ```
 
 ### Task 3: Enable autocompletion for Packer CLI
+
 ```bash
 packer -autocomplete-install
 ```
